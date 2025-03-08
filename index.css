@@ -1,0 +1,399 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  color: #00aaff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header Section */
+header {
+  background-color: #1f1f1f;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Hamburger Menu Icon */
+header .hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li {
+  position: relative;
+}
+
+header nav ul li a {
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 15px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a i {
+  font-size: 18px;
+}
+
+/* Box Outline Animation */
+header nav ul li a::before,
+header nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  transition: all 0.3s ease;
+}
+
+header nav ul li a::before {
+  top: -2px;
+  left: -2px;
+  border-top: 2px solid #00aaff;
+  border-left: 2px solid #00aaff;
+}
+
+header nav ul li a::after {
+  bottom: -2px;
+  right: -2px;
+  border-bottom: 2px solid #00aaff;
+  border-right: 2px solid #00aaff;
+}
+
+header nav ul li a:hover::before,
+header nav ul li a:hover::after {
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+}
+
+header nav ul li a:hover {
+  color: #00aaff;
+}
+
+/* Active Link Style */
+header nav ul li a.active {
+  color: #00aaff;
+}
+
+header nav ul li a.active::before,
+header nav ul li a.active::after {
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+}
+
+
+header .search-bar {
+  position: relative;
+  display: flex;
+  gap: 10px;
+}
+
+header .search-bar input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #ffffff;
+  font-size: 14px;
+  width: 300px;
+}
+
+header .search-bar input:focus {
+  outline: none;
+  background-color: #444;
+}
+
+header .search-bar button {
+  padding: 10px 20px;
+  background-color: #00aaff;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+header .search-bar button:hover {
+  background-color: #0099cc;
+}
+
+/* Hero Section */
+#hero {
+  background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+  padding: 150px 0;
+  text-align: center;
+}
+
+#hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #00aaff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* Featured Products Section */
+#products {
+  padding: 50px 0;
+}
+
+#products h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 36px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #cccccc;
+}
+
+.product-card .price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #00aaff;
+  margin: 10px 0;
+}
+
+/* Deals Section */
+#deals {
+  padding: 50px 0;
+}
+
+#deals h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 36px;
+}
+
+.deals-scroll {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 20px;
+}
+
+.deals-container {
+  display: inline-flex;
+  gap: 20px;
+}
+
+.deal-card {
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 250px;
+  flex-shrink: 0;
+}
+
+.deal-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.deal-card h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.deal-card p {
+  font-size: 14px;
+  color: #cccccc;
+}
+
+.deal-card .discount {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff4444;
+  margin: 10px 0;
+}
+
+/* Footer Section */
+footer {
+  background-color: #1f1f1f;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer .footer-links {
+  margin-bottom: 10px;
+}
+
+footer .social-icons {
+  margin-bottom: 10px;
+}
+
+footer .social-icons a {
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header .hamburger {
+    display: block; /* Show hamburger menu on mobile */
+  }
+
+  header nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #1f1f1f;
+    display: none; /* Hide nav menu by default on mobile */
+  }
+
+  header nav.active {
+    display: block; /* Show nav menu when active */
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  header nav ul li a {
+    padding: 15px 20px;
+    border-bottom: 1px solid #333;
+  }
+  
+  
+  
+
+  header .search-bar {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  header .search-bar input {
+    flex: 1;
+  }
+}
+
+
+.autocomplete-results {
+  position: absolute;
+  top: 140%; /* Position below the search box */
+  left: 0;
+  width: 285px;
+  background-color: dimgray;
+  color: white;
+  border: 2px solid #333;
+  border-radius: 5px;
+  max-height: 200px; /* Limit height for scrollable results */
+  overflow-y: auto; /* Enable vertical scrolling */
+  z-index: 1000;
+  display: none;
+  opacity: 0.90; /* Start with 0 opacity for animation */
+  transform: translateY(-10px); /* Start slightly above for animation */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.autocomplete-results.show {
+  display: block; /* Show the results box */
+  opacity: 2; /* Fully visible */
+  transform: translateY(0); /* Move to final position */
+}
+
+.autocomplete-results div {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.autocomplete-results div:hover {
+  background-color: #333;
+}
+
+/* Glowing Animation */
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 2px #00aaff, 0 0 8px #00aaff, 0 0 10px #00aaff, 0 0 20px #00aaff;
+  }
+  20% {
+    text-shadow: 0 0 5px #00aaff, 0 0 10px #00aaff, 0 0 20px #00aaff, 0 0 40px #00aaff;
+  }
+  50% {
+    text-shadow: 0 0 5px #00aaff, 0 0 10px #00aaff, 0 0 20px #00aaff, 0 0 40px #00aaff;
+  }
+}
+
+.glowing-title {
+  animation: glow 2s infinite; /* Apply the glow animation */
+  color: #ffffff; /* Ensure the text color is white */
+}
+

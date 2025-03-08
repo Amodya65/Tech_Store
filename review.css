@@ -1,0 +1,345 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Section */
+header {
+  background-color: #1f1f1f;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header .title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+header .neon-title {
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #00aaff;
+  text-shadow: 0 0 5px #00aaff, 0 0 10px #00aaff, 0 0 20px #00aaff, 0 0 40px #00aaff;
+}
+
+header .logo {
+  width: 40px; /* Adjust the size of the logo */
+  height: auto;
+  margin-left: 10px; /* Space between the title and logo */
+}
+
+header .hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li a {
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 15px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a i {
+  font-size: 18px;
+}
+
+header .search-bar {
+  display: flex;
+  gap: 10px;
+}
+
+header .search-bar input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #ffffff;
+  font-size: 14px;
+  width: 300px;
+}
+
+header .search-bar button {
+  padding: 10px 20px;
+  background-color: #00aaff;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+header .search-bar button:hover {
+  background-color: #0099cc;
+}
+
+/* Reviews Section */
+#reviews {
+  padding: 100px 0 50px 0;
+}
+
+#reviews h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 36px;
+}
+
+.review-content {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.review-form {
+  flex: 1;
+  background-color: #1f1f1f;
+  padding: 100px;
+  border-radius: 10px;
+}
+
+.review-form h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.review-form .form-group {
+  margin-bottom: 20px;
+}
+
+.review-form label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.review-form input,
+.review-form select,
+.review-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #1f1f1f;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.review-form textarea {
+  resize: vertical;
+}
+
+.review-form .cta-button {
+  background-color: #00aaff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.review-form .cta-button:hover {
+  background-color: #0099cc;
+}
+
+.review-list {
+  flex: 1;
+}
+
+.review-list h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.review-card {
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.review-card .review-rating {
+  font-size: 20px;
+  color: #ffdd57;
+  margin-bottom: 10px;
+}
+
+.review-card .review-text {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.review-card .review-author {
+  font-size: 14px;
+  color: #cccccc;
+  text-align: right;
+}
+
+/* Footer Section */
+footer {
+  background-color: #1f1f1f;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer .footer-links {
+  margin-bottom: 10px;
+}
+
+footer .social-icons {
+  margin-bottom: 10px;
+}
+
+footer .social-icons a {
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header .hamburger {
+    display: block;
+  }
+
+  header nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #1f1f1f;
+    display: none;
+  }
+
+  header nav.active {
+    display: block;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  header nav ul li a {
+    padding: 15px 20px;
+    border-bottom: 1px solid #333;
+  }
+
+  header .search-bar {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  header .search-bar input {
+    flex: 1;
+  }
+
+  .review-content {
+    flex-direction: column;
+  }
+}
+
+/* Box Outline Animation */
+header nav ul li a::before,
+header nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  transition: all 0.3s ease;
+}
+
+header nav ul li a::before {
+  top: -2px;
+  left: -2px;
+  border-top: 2px solid #00aaff;
+  border-left: 2px solid #00aaff;
+}
+
+header nav ul li a::after {
+  bottom: -2px;
+  right: -2px;
+  border-bottom: 2px solid #00aaff;
+  border-right: 2px solid #00aaff;
+}
+
+header nav ul li a:hover::before,
+header nav ul li a:hover::after {
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+}
+
+header nav ul li a:hover {
+  color: #00aaff;
+}
+
+.autocomplete-results {
+  position: absolute;
+  top: 100%; /* Position below the search box */
+  left: 10;
+  width: 285px;
+  background-color: dimgray;
+  color: white;
+  border: 2px solid #333;
+  border-radius: 5px;
+  max-height: 200px; /* Limit height for scrollable results */
+  overflow-y: auto; /* Enable vertical scrolling */
+  z-index: 1000;
+  display: none;
+  opacity: 0.90; /* Start with 0 opacity for animation */
+  transform: translateY(-10px); /* Start slightly above for animation */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.autocomplete-results.show {
+  display: block; /* Show the results box */
+  opacity: 2; /* Fully visible */
+  transform: translateY(0); /* Move to final position */
+}
+
+.autocomplete-results div {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.autocomplete-results div:hover {
+  background-color: #333;
+}

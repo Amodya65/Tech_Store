@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reviews - TechStore</title>
+  <link rel="stylesheet" href="review.css">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <div class="title-container">
+        <h1 class="title">TechStore</h1>
+      </div>
+      <!-- Hamburger Menu Icon for Mobile -->
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="products.html" class="nav-link"><i class="fas fa-box-open"></i> Products</a></li>
+          <li><a href="deals.html" class="nav-link"><i class="fas fa-tags"></i> Deals</a></li>
+          <li><a href="reviews.html" class="nav-link"><i class="fas fa-star"></i> Review</a></li>
+          <li><a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+          <li><a href="about.html" class="nav-link"><i class="fas fa-info-circle"></i> About</a></li>
+        </ul>
+      </nav>
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search products...">
+        <button id="search-button">Search</button>
+        <div id="autocomplete-results" class="autocomplete-results"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Reviews Section -->
+  <section id="reviews">
+    <div class="container">
+      <h2 class="gradient-text"><br><br>Customer Reviews</h2>
+      <div class="review-content">
+        <!-- Review Form -->
+        <div class="review-form">
+        <center><h3>Submit Your Review</h3></center>
+          <form id="review-form">
+            <div class="form-group">
+              <label for="review-name">Name</label>
+              <input type="text" id="review-name" name="review-name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+              <label for="review-rating">Rating</label>
+              <select id="review-rating" name="review-rating" required>
+                <option value="5">★★★★★</option>
+                <option value="4">★★★★☆</option>
+                <option value="3">★★★☆☆</option>
+                <option value="2">★★☆☆☆</option>
+                <option value="1">★☆☆☆☆</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="review-message">Review</label>
+              <textarea id="review-message" name="review-message" placeholder="Write your review..." rows="5" required></textarea>
+            </div>
+           <center><button type="submit" class="cta-button">Submit Review</button></center>
+          </form>
+        </div>
+
+        <!-- Review List -->
+        <div class="review-list">
+          <h3>What Our Customers Say</h3>
+          <div class="review-card">
+            <div class="review-rating">★★★★★</div>
+            <p class="review-text">"Amazing products and great deals! I highly recommend TechStore."</p>
+            <p class="review-author">- John Doe</p>
+          </div>
+          <div class="review-card">
+            <div class="review-rating">★★★★☆</div>
+            <p class="review-text">"Fast delivery and excellent customer service. Will shop again!"</p>
+            <p class="review-author">- Jane Smith</p>
+          </div>
+          <div class="review-card">
+            <div class="review-rating">★★★☆☆</div>
+            <p class="review-text">"Good products, but the prices could be more competitive."</p>
+            <p class="review-author">- Mike Johnson</p>
+          </div>
+          <!-- Add more review cards as needed -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="about.html">About Us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+      <div class="social-icons">
+        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://wa.me/yournumber" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://t.me/yourusername" target="_blank"><i class="fab fa-telegram"></i></a>
+        <a href="https://instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://tiktok.com/yourusername" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="https://pinterest.com/yourusername" target="_blank"><i class="fab fa-pinterest"></i></a>
+      </div>
+      <p>&copy; 2025 TechStore. All rights reserved.</p>
+      <p>As an Amazon Associate, I earn from qualifying purchases.</p>
+    </div>
+  </footer>
+
+  <script src="review.js"></script>
+</body>
+</html>e

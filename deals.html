@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deals - TechStore</title>
+  <link rel="stylesheet" href="deals.css">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <div class="title-container">
+        <h1 class="title">TechStore</h1>
+      
+      </div>
+      <!-- Hamburger Menu Icon for Mobile -->
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="products.html" class="nav-link"><i class="fas fa-box-open"></i> Products</a></li>
+          <li><a href="deals.html" class="nav-link"><i class="fas fa-tags"></i> Deals</a></li>
+          <li><a href="review.html" class="nav-link"><i class="fas fa-star"></i> Reviews</a></li>
+          <li><a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+          <li><a href="about.html" class="nav-link"><i class="fas fa-info-circle"></i> About</a></li>
+        </ul>
+      </nav>
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search products...">
+        <button id="search-button">Search</button>
+        <div id="autocomplete-results" class="autocomplete-results"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Deals Section -->
+  <section id="deals">
+    <div class="container">
+      <h2 class="gradient-text"><br><br>Today’s Best Deals</h2>
+      <div class="deals-grid">
+        <!-- Deal Card 1 -->
+        <div class="deal-card">
+          <img src="https://via.placeholder.com/150" alt="Deal 1">
+          <h3>Deal 1</h3>
+          <p>Original Price: $100 | Discounted Price: $80</p>
+          <p class="discount">20% OFF</p>
+          <a href="#" class="cta-button">Grab the Deal</a>
+        </div>
+        <!-- Deal Card 2 -->
+        <div class="deal-card">
+          <img src="https://via.placeholder.com/150" alt="Deal 2">
+          <h3>Deal 2</h3>
+          <p>Original Price: $200 | Discounted Price: $150</p>
+          <p class="discount">25% OFF</p>
+          <a href="#" class="cta-button">Grab the Deal</a>
+        </div>
+        <!-- Deal Card 3 -->
+        <div class="deal-card">
+          <img src="https://via.placeholder.com/150" alt="Deal 3">
+          <h3>Deal 3</h3>
+          <p>Original Price: $300 | Discounted Price: $250</p>
+          <p class="discount">17% OFF</p>
+          <a href="#" class="cta-button">Grab the Deal</a>
+        </div>
+        <!-- Deal Card 4 -->
+        <div class="deal-card">
+          <img src="https://via.placeholder.com/150" alt="Deal 4">
+          <h3>Deal 4</h3>
+          <p>Original Price: $400 | Discounted Price: $350</p>
+          <p class="discount">13% OFF</p>
+          <a href="#" class="cta-button">Grab the Deal</a>
+        </div>
+        <!-- Repeat for more deals (total 8) -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="about.html">About Us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+      <div class="social-icons">
+        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://wa.me/yournumber" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://t.me/yourusername" target="_blank"><i class="fab fa-telegram"></i></a>
+        <a href="https://instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://tiktok.com/yourusername" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="https://pinterest.com/yourusername" target="_blank"><i class="fab fa-pinterest"></i></a>
+      </div>
+      <p>&copy; 2025 TechStore. All rights reserved.</p>
+      <p>As an Amazon Associate, I earn from qualifying purchases.</p>
+    </div>
+  </footer>
+
+  <script src="deals.js"></script>
+</body>
+</html>
